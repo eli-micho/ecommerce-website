@@ -1,0 +1,22 @@
+.featured-content {
+    height: calc(100% - 127px);
+    padding: 50px 40px 0 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    .section-title {
+        h1 {
+            font-size: 35px;
+        }
+    }
+
+    .popular-products{
+        padding-left: 10px;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+}
