@@ -1,0 +1,36 @@
+.signup {
+    padding-left: 10px;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    .register-container {
+        display: flex;
+        width: 100%;
+
+
+        .signup-social {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            .google-signup {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 210px;
+                height: 50px;
+                border: solid 2px #ddd;
+                color: #2d2d2d;
+                cursor: pointer;
+                span {
+                    padding: 0 12px;
+                }
+            }
+        } 
+    }    
+}

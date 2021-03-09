@@ -1,7 +1,4 @@
 .featured-content {
-    height: calc(100% - 127px);
-    padding: 50px 40px 0 40px;
-
     display: flex;
     flex-direction: column;
 
@@ -18,5 +15,17 @@
         background-color: white;
         display: flex;
         flex-direction: column;
+
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            li {
+                width: 33%;
+                margin-bottom: 35px;
+            }
+        }
     }
 }

@@ -1,0 +1,31 @@
+.footer {
+    background-color: #cdd0cb;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 40px 15px 40px;
+
+    .footer-submain {
+        width: 50%;
+        display: flex;
+        list-style-type: none;
+        li {
+            width: 49%;
+            div {
+                h4 {
+                    font-size: 17px;
+                    font-style: bold;
+                }
+            }
+        }
+
+        .footer-cta {
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+}
