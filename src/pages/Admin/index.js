@@ -95,18 +95,6 @@ const Admin = props => {
                             Add New Product
                         </h2>
 
-                        <FormSelect
-                            label="Category"
-                            options={[{
-                                value: "mens",
-                                name: "Mens"
-                            },{
-                                value: "womens",
-                                name: "Womens"
-                            }]}
-                            handleChange={e => setProductCategory(e.target.value)}
-                        />
-
                         <FormInput
                             label="Name"
                             type="text"
@@ -198,22 +186,6 @@ const Admin = props => {
                         <tr>
                             <td>
 
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <table border="0" cellPadding="10" cellSpacing="0">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                               {/*  {!isLastPage && (
-                                                <LoadMore {...configLoadMore} />
-                                                )} */}
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
                             </td>
                         </tr>
                     

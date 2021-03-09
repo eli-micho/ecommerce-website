@@ -10,30 +10,19 @@ const mapState = state => ({
     product: state.productsData.product
 });
 
-const ProductCard = (props) => {
+const ProductCard = (product) => {
     const dispatch = useDispatch();
     const history = useHistory();
-    const { productID } = useParams();
-    const { product } = useSelector(mapState);
+
 
     const {
+        documentID,
         productThumbnail,
         productName,
         productPrice,
         productDesc
     } = product;
 
-    useEffect(() => {
-        dispatch(
-            fetchProductStart(productID)
-        )
-        return () => {
-            dispatch(
-                setProduct({})
-            )
-        }
-
-    }, []);
     
     const handleAddToCart = (product) => {
         if (!product) return;
@@ -47,8 +36,8 @@ const ProductCard = (props) => {
     };
 
     return (
-        <div className="product-card">
-            <img src={productThumbnail} alt="Avatar"/>
+        <div className="productCard">
+            <img src={productThumbnail} alt={[productName]}/>
             <div className="container">
                 <h4>{productName}</h4> 
                 <p>${productPrice}</p>
